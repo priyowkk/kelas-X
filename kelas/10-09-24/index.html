@@ -4,223 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1 {
-            background-color: red;
-        }
-       ul  li {
-            font-size: large;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        ol li {
-            background-color: green;
-        }
-        section {
-            background-color: blue;
-        }
-        article {
-            background-color: brown;
-        }
-        footer {
-            background-color: pink;
-        }
-        aside {
-            background-color: gray;
-        }
-        section  h1{
-            background-color: cyan;
-        }
-        article h1 {
-            background-color: greenyellow;
-        }
-         #kakek {
-            background-color: yellow;
-            border: 5px solid blue;
-            padding-top: 3px;
-            padding-left: 30px ;
-         }
-         .bapak {
-            font-family: 'Courier New', Courier, monospace;
-            border: 3px solid red;
-            background-color: red;
-            /* padding-left: 30px;
-            padding-bottom: 30px;
-            padding-top: 30px; */
-            padding: 30px 0px 30px 0px;
-         }
-         .pakdhe {
-            font-style: italic;
-            border: 3px solid green;
-            background-color: white;
-            margin-top: 30px;
-            margin-bottom: 30px;
-         }
-         #nenek {
-            font-style: italic;
-         }
-         .ukuran-font {
-            font-size: x-large;
-         }
-         .warna-font {
-            color: red;
-         }
-         .anak {
-            border: 1px solid black;
-            background-color: aqua;
-         }
-         .budhe {
-            border: 3px solid brown;
-            margin-top: 30px;
-            background-color: violet;
-            margin-bottom: 30px;
-         }
-         .kakak {
-            background-color: chartreuse;
-            border: 1px solid black;
-            margin: 30px 0px 30px 0px;
-         }
-         .adek {
-            background-color: orange;
-            border: 1px solid black;
-         }
-         #catur {
-            background-color: black;
-            display: flex;
-         }
-         .kotak {
-            width: 1000px;
-            height: 100px;
-         }
-         .putih {
-            background-color: white;
-         }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="catur">
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak "></div>
-        <div class="kotak putih"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak "></div>
-        <div class="kotak putih"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak "></div>
-        <div class="kotak putih"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-    </div>
-    <div id="catur">
-        <div class="kotak putih"></div>
-        <div class="kotak"></div>
-        <div class="kotak putih"></div>
-        <div class="kotak "></div>
-        <div class="kotak putih"></div>
-    </div>
-    
-    <div id="kakek">sekolah
-        <div class="bapak  warna-font">
-            <div class="anak ukuran-font">Meja</div>
-            <div class="kakak ">Kursi</div>
-            <div class="adek">Papan tulis</div>
+    <h1 style="text-align: center;">PAPAN CATUR</h1>
+    <div class="container">
+        <div class="catur">
+            <div>
+                <div class="kotak hitam"> <img src="image/HITAM/1BLCK.png" alt=""></div>
+                <div class="kotak"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak"><img src="image/PUTIH/1PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak "><img src="image/HITAM/5BLCK.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/PUTIH/5PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak hitam"><img src="image/HITAM/2BLCK.png" alt=""></div>
+                <div class="kotak"><img src="image/HITAM/6BLCK.png " alt=""></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak"><img src="image/PUTIH/2PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak "><img src="image/HITAM/3BLCK.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/PUTIH/3PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak hitam"><img src="image/HITAM/4BLCK.png" alt=""></div>
+                <div class="kotak"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak"><img src="image/PUTIH/4PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak "><img src="image/HITAM/2BLCK.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/PUTIH/2PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak hitam"><img src="image/HITAM/5BLCK.png" alt=""></div>
+                <div class="kotak"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak"></div>
+                <div class="kotak hitam"><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak"><img src="image/PUTIH/5PTH.png" alt=""></div>
+            </div>
+            <div>
+                <div class="kotak "><img src="image/HITAM/1BLCK.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/HITAM/6BLCK.png" alt=""></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "></div>
+                <div class="kotak hitam"></div>
+                <div class="kotak "><img src="image/PUTIH/6PTH.png" alt=""></div>
+                <div class="kotak hitam"><img src="image/PUTIH/1PTH.png" alt=""></div>
+            </div>
+
         </div>
-        <div class="pakdhe">Masjid</div>
-        <div class="budhe ">Lab</div>
     </div>
-    <section>
-        <h1>section</h1>
-        <p>section adalah container/wadah</p>
-    </section>
-    <article>
-        <h1>jadwal pelajaran</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Senin</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>upacara</td>
-                </tr>
-                <tr>
-                    <td>RPL</td>
-                </tr>
-                <tr>
-                    <td>Seni Budaya</td>
-                </tr>
-            </tbody>
-        </table>
-    </article>
-    <footer>
-        <p>website ini dibuat oleh priyok</p>
-    </footer>
-    <aside>
-        <ol>
-            <li>HTMl</li>
-            <li>CSS</li>
-            <li>Java Script</li>
-            <li>PHP</li>
-        </ol>
-    </aside>
 
-    <h1 style="background-color: yellow; font-family: 'Courier New', Courier, monospace; margin-top: 200px ; margin-bottom: 100px;" >Belajar HTML dan CSS</h1>
-
-    <p style="margin-top: 50px;">HTML digunakan untuk membuat website. CSS digunakan untuk mengatur tampilan</p>
-    <h1>Materi HTML</h1>
-    <ul>
-        <li>h1 untuk judul</li>
-        <li>p untuk paragraf</li>
-        <li>img untuk gambar</li>
-        <li>table untuk tabel</li>
-        <li>input untuk form</li>
-        <li>li untuk list</li>
-    </ul>
-    <h1>Materi CSS</h1>
-        <ol>
-            <li>margin,padding,position untuk mengatur jarak antar elemen</li>
-            <li>display untuk mengatur eleman html agar tampil atau tidak tampil,
-                mendatar (kolom),menurun (baris)
-            </ul>
-            <li>style untuk mengatur font</li>
-        </ol>
-        <h1>Belajar CSS</h1>
-    
 </body>
 </html>
