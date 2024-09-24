@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                 font-family: Arial, sans-serif;
+                 margin: 0;
+                 padding: 0;
+                 background-color: #f5f5f5;
+             }
+
+             .container {
+                 display: flex;
+                 padding: 20px;
+             }
+             .left-column {
+                 width: 40%;
+                 padding-right: 20px;
+             }
+             .right-column {
+                 width: 60%;
+             }
+             .product-image {
+                 width: 100%;
+                 height: auto;
+                 background-color: black;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 position: relative;
+             }
+             .product-image img {
+                 max-width: 100%;
+                 max-height: 100%;
+             }
+             .play-button {
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%, -50%);
+                 font-size: 50px;
+                 color: white;
+             }
+             .thumbnail-container {
+                 display: flex;
+                 margin-top: 10px;
+             }
+             .thumbnail {
+                 width: 60px;
+                 height: 60px;
+                 margin-right: 10px;
+                 border: 1px solid #ddd;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 position: relative;
+             }
+             .thumbnail img {
+                 max-width: 100%;
+                 max-height: 100%;
+             }
+             .thumbnail .play-button {
+                 font-size: 20px;
+             }
+             .product-title {
+                 font-size: 18px;
+                 font-weight: bold;
+                 margin-bottom: 10px;
+             }
+             .rating {
+                 color: #f39c12;
+                 margin-bottom: 10px;
+             }
+             .rating span {
+                 color: #333;
+                 font-size: 14px;
+             }
+             .flash-sale {
+                 background-color: #ff5722;
+                 color: white;
+                 padding: 5px 10px;
+                 font-weight: bold;
+                 display: inline-block;
+                 margin-bottom: 10px;
+             }
+             .price {
+                 font-size: 24px;
+                 color: #e53935;
+                 font-weight: bold;
+                 margin-bottom: 10px;
+             }
+             .original-price {
+                 text-decoration: line-through;
+                 color: #999;
+                 margin-bottom: 10px;
+             }
+             .discount {
+                 background-color: #ff5722;
+                 color: white;
+                 padding: 2px 5px;
+                 font-size: 12px;
+                 display: inline-block;
+                 margin-bottom: 10px;
+             }
+             .voucher {
+                 display: flex;
+                 margin-bottom: 10px;
+             }
+             .voucher span {
+                 background-color: #ffeb3b;
+                 color: #333;
+                 padding: 2px 5px;
+                 font-size: 12px;
+                 margin-right: 5px;
+             }
+             .return, .hemat, .pengiriman {
+                 display: flex;
+                 align-items: center;
+                 margin-bottom: 10px;
+             }
+             .return i, .hemat i, .pengiriman i {
+                 color: #4caf50;
+                 margin-right: 5px;
+             }
+             .return span, .hemat span, .pengiriman span {
+                 font-size: 14px;
+             }
+             .type {
+                 display: flex;
+                 margin-top: 20px;
+             }
+             .type div {
+                 border: 1px solid #ddd;
+                 padding: 10px;
+                 margin-right: 10px;
+                 text-align: center;
+                 cursor: pointer;
+             }
+             .type div img {
+                 max-width: 100%;
+                 max-height: 50px;
+                 margin-bottom: 5px;
+             }
+       </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+         <div class="product-image">
+          <img alt="Product image" height="400" src="image/main.jpg" width="400"/>
+          <i class="fas fa-redo play-button">
+          </i>
+         </div>
+         <div class="thumbnail-container">
+          <div class="thumbnail">
+           <img alt="Thumbnail image" height="60" src="image/main.jpg" width="60"/>
+           <i class="fas fa-play play-button">
+           </i>
+          </div>
+          <div class="thumbnail">
+           <img alt="Thumbnail image" height="60" src="image/bawah2.jpg" width="60"/>
+          </div>
+          <div class="thumbnail">
+           <img alt="Thumbnail image" height="60" src="image/bawah3.jpg" width="60"/>
+          </div>
+          <div class="thumbnail">
+           <img alt="Thumbnail image" height="60" src="image/bawah4.jpg" width="60"/>
+          </div>
+          <div class="thumbnail">
+           <img alt="Thumbnail image" height="60" src="image/bawah5.jpg" width="60"/>
+          </div>
+         </div>
+        </div>
+        <div class="right-column">
+         <div class="product-title">
+            MESIN PEMOTONG RUMPUT S8000 AUTOMATIC&PINTAR
+         </div>
+         <div class="rating">
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star">
+          </i>
+          <i class="fas fa-star-half-alt">
+          </i>
+          <span>
+           4.9 <img src="image/Screenshot 2024-09-24 174124.png" alt="" width="50px">
+          </span>
+          <span>
+           <u> Penilaian</u>
+          </span>
+         </div>
+         <div class="flash-sale">
+          FLASH SALE
+         </div>
+         <div class="original-price">
+          Rp200.000.000
+         </div>
+         <div class="price">
+          Rp99.000.000
+         </div>
+         <div class="discount">
+          18% OFF
+         </div>
+         <div class="voucher">
+          <span>
+           99% OFF
+          </span>
+          <span>
+           99% OFF
+          </span>
+          <span>
+           50% OFF
+          </span>
+          <!-- <span>
+           Rp30RE
+          </span> -->
+          <span>
+           Tampilkan Semua
+          </span>
+         </div>
+         <div class="return">
+          <i class="fas fa-undo">
+          </i>
+          <span>
+            <img src="image/free ongkir.png" alt="" width="15px">
+           Bebas Pengembalian
+          </span>
+         </div>
+         <div class="hemat">
+          <i class="fas fa-gift">
+          </i>
+          <span>
+           Hadiah Gratis
+          </span>
+         </div>
+         <div class="pengiriman">
+          <i class="fas fa-truck">
+          </i>
+          <span>
+            <img src="image/ongkir.png" alt="" width="15px">
+           Gratis Ongkir
+          </span>
+         </div>
+         <div class="pengiriman">
+          <i class="fas fa-map-marker-alt">
+          </i>
+          <!-- <span>
+           Pengiriman Ke
+          </span>
+          <span>
+           KOTA JAKARTA PUSAT
+          </span> -->
+          <span>
+           Rp0
+          </span>
+         </div>
+         <div class="type">
+          <div>
+           <img alt="Type image" height="50" src="image/bawah5.jpg" width="100"/>
+           <div>
+            1 Juta RPM Bos
+           </div>
+          </div>
+          <div>
+           <img alt="Type image" height="50" src="image/bawah3.jpg" width="100"/>
+           <div>
+            500k RPM
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+    
+</body>
+</html>
