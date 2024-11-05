@@ -1,0 +1,39 @@
+.container {
+    width: 900px;
+    margin: auto;
+}
+.header {
+    height: 200px;
+    display: flex;
+    /* justify-content: center; */
+    
+}
+.header img {
+    width: 200px;
+    margin-right: 20px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li {
+    margin-left: 20px;
+    list-style: none;
+}
+.home {
+    background-color: aqua;
+}
+.contact {
+    background-color: red;
+}
+.about {
+    background-color: brown;
+}
+.jadwal {
+    background-color: yellow;
+}
+.jurusan {
+    background-color: blue;
+}
+.sejarah {
+    background-color: gray;
+}
