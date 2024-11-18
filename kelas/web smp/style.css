@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("images/bg.jpg"); */
+    /* background-color: yellow; */
+    background-color: whitesmoke;
+}
+
+
+
+.container {
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    height: 110px;
+    position: relative;
+    z-index: 100;
+    position: fixed;
+    width: 99%;
+    top: 0;
+
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-logo {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    height: 50px;
+}
+
+.nav-logo p {
+    font-size: 15px;
+}
+
+.nav-logo img {
+    height: 100px;
+    margin-right: 10px;
+}
+
+.nav-logo h1:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.nav-logo a {
+    font-size: x-large;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+}
+
+.navbar-nav li {
+    margin-left: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.navbar-nav a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.page1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.page2 {
+    height: 80vh;
+}
+
+.page1 {
+    background-image: url("images/bg.jpg");
+}
+
+.page2 {
+    background-color: whitesmoke;
+}
+
+.page1 button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.page1 button:hover {
+    background-color: gray;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page2 {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.left img {
+    width: 300px;
+    display: flex;
+    margin-top: 35px;
+    margin-left: 170px;
+    /* margin-top: 1
+    00px;
+    margin-left: 100px;  */
+
+}
+
+.right p {
+    background-color: whitesmoke;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 100px;
+}
+
+.right {
+    width: 50%;
+}
+
+.img2 {
+    position: relative;
+    top: 45px;
+}
