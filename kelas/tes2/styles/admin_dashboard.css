@@ -1,0 +1,242 @@
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Header Styles */
+h1, h2 {
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h1::after, h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(to right, #FFD700, #333);
+    border-radius: 2px;
+}
+
+/* Form Styles */
+.ticket-form {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-left: 4px solid #FFD700;
+}
+
+.ticket-form form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #FFD700;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+}
+
+button[type="submit"] {
+    background: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #FFD700;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background: #333;
+    color: white;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background: #fffdf0;
+}
+
+/* Button Styles */
+.edit-btn {
+    background: #FFD700;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+
+.edit-btn:hover {
+    background: #ffd900;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+}
+
+/* Delete button styles */
+button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+button[style*="background-color: red"] {
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+button[style*="background-color: red"]:hover {
+    background-color: #ff3333 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 51, 51, 0.2);
+}
+
+/* Logout button */
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-logout {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff3b3b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-logout:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 59, 59, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .ticket-form {
+        padding: 15px;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    .edit-btn, button a {
+        padding: 6px 12px;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+tbody tr {
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+tbody tr:nth-child(1) { animation-delay: 0.1s; }
+tbody tr:nth-child(2) { animation-delay: 0.2s; }
+tbody tr:nth-child(3) { animation-delay: 0.3s; }
+tbody tr:nth-child(4) { animation-delay: 0.4s; }
+tbody tr:nth-child(5) { animation-delay: 0.5s; }

@@ -1,0 +1,510 @@
+/* Reset and base styles */
+html{
+    scroll-behavior: smooth;    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    /* line-height: 1.6;*/
+}
+.book-button.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Style untuk popup */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+.login-popup .popup-buttons {
+    margin-top: 15px;
+}
+
+.login-popup button {
+    margin: 0 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-popup .login-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.login-popup .cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Navbar styles */
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Menambahkan gap antara gambar dan teks */
+    color: #FFD700;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-brand img {
+    width: 90px;
+    border-radius: 10px;
+    display: block; /* Memastikan gambar diperlakukan sebagai block element */
+    align-self: center; /* Memastikan gambar berada di tengah secara vertikal */
+}
+
+.nav-brand i {
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: 44px;
+}
+
+.nav-links a,
+.nav-actions a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #FFD700;
+    color: #333;
+}
+/* Add this to your styles/style.css file */
+
+
+
+/* CSS untuk tombol Login dan Register */
+.nav-actions .nav-link {
+    display: inline-block;
+    background-color: #FFD700; /* Warna biru untuk tombol */
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 0.5rem; /* Jarak antar tombol */
+}
+
+.nav-actions .nav-link:hover {
+    background-color: #c8aa00; /* Warna biru gelap saat hover */
+    color: #333;
+}
+
+.nav-actions .nav-link:nth-child(2) {
+    background-color: #FFD700; /* Warna hijau untuk tombol Register */
+    
+}
+
+.nav-actions .nav-link:nth-child(2):hover {
+    background-color: #c8aa00; /* Warna hijau gelap saat hover */
+    color: #333;
+}
+
+/* Responsif untuk tampilan mobile */
+@media screen and (max-width: 768px) {
+    .nav-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .nav-actions .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.user-button {
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.user-button:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-top: 0.5rem;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        width: 100%; /* Memastikan dropdown menyesuaikan dengan layar */
+        right: 0;
+    }
+}
+
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('../image/whoosh.webp');    
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+.hero-content img{
+    width: 130px;
+    
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #FFD700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255,215,0,0.3);
+}
+
+/* Main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Search section */
+.search-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.search-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+/* Latest routes section */
+/* Latest routes section */
+.latest-routes {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.latest-routes h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom sejajar */
+    gap: 2rem;
+    padding: 0.5rem;
+}
+
+.route-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    height: 100%; /* Memastikan tinggi kartu sama */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.route-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.route-cities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.route-cities .departure,
+.route-cities .destination {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+    flex: 1;
+    text-align: center;
+}
+
+.route-cities i {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.route-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 0.5rem;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+.book-button {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: #FFD700;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    margin-top: 1rem;
+}
+
+.book-button:hover {
+    background-color: #333;
+    color: #FFD700;
+    border-color: #FFD700;
+}
+
+.book-button.disabled {
+    background-color: #e0e0e0;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+    .routes-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk tablet */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .routes-grid {
+        grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 2rem 1rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    /* width: 100%; */
+}
+
+.footer-section h3 {
+    color: #FFD700;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+} 
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #555;
+}
