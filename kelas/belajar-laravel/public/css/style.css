@@ -1,0 +1,112 @@
+/* Import font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffecd1 100%); /* Gradien lembut */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff7f50; /* Warna coral cerah */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ff4500; /* Warna lebih terang saat hover */
+    transform: scale(1.05); /* Efek membesar */
+}
+
+.btn-warning {
+    background: #ff9f1c; /* Warna kuning-oranye cerah */
+    border: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 159, 28, 0.4); /* Bayangan glowing */
+}
+
+.btn-warning:hover {
+    transform: scale(1.1) translateY(-3px); /* Membesar dan sedikit naik */
+    background: #ff8200; /* Warna lebih gelap */
+    box-shadow: 0 6px 20px rgba(255, 130, 0, 0.6); /* Bayangan lebih kuat */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.03); /* Naik dan sedikit membesar */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dramatis */
+}
+
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Zoom gambar saat hover */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #2c3e50, #1a252f); /* Gradien gelap elegan */
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3); /* Bayangan atas */
+}
+
+/* Efek tambahan untuk teks */
+h1, h2, h5 {
+    color: #ff7f50;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover, h5:hover {
+    color: #ff4500; /* Warna lebih cerah saat hover */
+}
+
+/* Animasi tambahan untuk elemen interaktif */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn-warning:active {
+    animation: pulse 0.2s ease; /* Efek denyut saat diklik */
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .btn-warning {
+        padding: 10px 20px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
