@@ -1,0 +1,89 @@
+body {
+  background-color: #f9f9f9;
+}
+
+/* CSS dari App.css */
+.App {
+  text-align: center;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.page-container h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.page-container p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.timeline {
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 3px solid #61dafb;
+}
+
+.about-content {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.about-content h3 {
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+.about-content ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* CSS dari Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
