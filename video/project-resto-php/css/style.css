@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    padding-top: 56px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    padding: 20px 0;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
+
+/* Card Styles */
+.menu-card {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Admin Panel Styles */
+.admin-sidebar {
+    background: #343a40;
+    color: white;
+    min-height: calc(100vh - 56px);
+    padding: 20px;
+}
+
+.admin-sidebar .nav-link {
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+}
+
+.admin-sidebar .nav-link:hover {
+    color: white;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Order Status Badges */
+.badge-pending {
+    background-color: #ffc107;
+}
+
+.badge-processing {
+    background-color: #17a2b8;
+}
+
+.badge-completed {
+    background-color: #28a745;
+}
+
+.badge-cancelled {
+    background-color: #dc3545;
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Cart Badge */
+.cart-badge {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-badge[data-count]:after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+/* Toast Notifications */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
